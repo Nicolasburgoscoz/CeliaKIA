@@ -22,7 +22,7 @@
             android:id="@+id/emailTextView"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Email" />
+            android:text="@string/email" />
 
         <Space
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             android:id="@+id/providerTextView"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Proveedor" />
+            android:text="@string/proveedor" />
 
         <Space
             android:layout_width="match_parent"
@@ -45,11 +45,11 @@
 
             <Button
                 android:id="@+id/logOutButton"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/colorAccent"
-                android:text="Cerrar Sesión"
+                android:text="@string/cerrar_sesion"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>

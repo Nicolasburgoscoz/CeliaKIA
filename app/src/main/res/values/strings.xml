@@ -15,7 +15,9 @@
     <string name="prefs_file">com.ids.celiakia.PREFERENCE_FILE_KEY</string>
     <string name="facebook_app_id">2722938047952714</string>
     <string name="fb_login_protocol_scheme">fb2722938047952714</string>
-
+    <string name="proveedor">Proveedor</string>
+    <string name="email">Email</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
 
 
 </resources>
