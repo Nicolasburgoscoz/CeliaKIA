@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "925468084545",
+    "firebase_url": "https://celiakia-ids.firebaseio.com",
+    "project_id": "celiakia-ids",
+    "storage_bucket": "celiakia-ids.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925468084545:android:82c70b7394e10dbc1679c0",
+        "android_client_info": {
+          "package_name": "com.ids.celiakia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925468084545-l0fja98tbp65gukvku3qucm2ieel35jd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkFFKLdYjKFiQrJzkDn7yiqYrvG2NAABA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925468084545-l0fja98tbp65gukvku3qucm2ieel35jd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
