@@ -13,10 +13,25 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textoEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/asap_bold"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="Email"
+            android:textColor="#72BB53" />
 
         <EditText
             android:id="@+id/emailEditText"
@@ -30,6 +45,17 @@
             android:layout_width="match_parent"
             android:layout_height="8dp" />
 
+        <TextView
+            android:id="@+id/textoPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/asap_bold"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="Password"
+            android:textColor="#72BB53" />
+
         <EditText
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
@@ -37,6 +63,17 @@
             android:ems="10"
             android:hint="Contraseña"
             android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textoOlvideContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/asap_medium"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="Olvidé mi contraseña"
+            android:textColor="#989EB1" />
 
         <Space
             android:layout_width="match_parent"
@@ -46,15 +83,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/logOutButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/colorPrimary"
-                android:text="Registrar"
-                android:textColor="@android:color/white" />
 
             <Space
                 android:layout_width="8dp"
@@ -76,34 +104,144 @@
             android:layout_height="8dp"
             android:layout_weight="1" />
 
-        <Button
-            android:id="@+id/googleButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <TextView
+            android:id="@+id/textoRedesSociales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/white"
-            android:drawableStart="@drawable/common_google_signin_btn_icon_dark"
-            android:paddingStart="16dp"
-            android:text="Google"
-            android:textAlignment="textStart"
-            android:textColor="@color/colorPrimaryDark" />
+            android:fontFamily="@font/asap_medium"
+            android:paddingStart="110dp"
+            android:paddingEnd="5dp"
+            android:text="o utilizá tus redes sociales"
+            android:textColor="#989EB1" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="8dp"
             android:layout_weight="1" />
 
-        <Button
-            android:id="@+id/facebookButton"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@android:color/white"
-            android:drawableStart="@drawable/icono_facebook"
-            android:paddingStart="16dp"
-            android:text="Facebook"
-            android:textAlignment="textStart"
-            android:textColor="@color/colorPrimaryDark" />
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/googleButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:backgroundTint="#FF3823"
+                android:drawableStart="@drawable/common_google_signin_btn_icon_dark"
+                android:paddingStart="16dp"
+                android:text="Google"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/facebookButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:backgroundTint="#3B5998"
+                android:drawableStart="@drawable/icono_facebook"
+                android:paddingStart="16dp"
+                android:text="Facebook"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textoRegistrado"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/asap_medium"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="¿Aún no estás registrado?"
+                android:textColor="#989EB1"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/logOutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:text="Registrarse"
+                android:textColor="#3D8AF7" />
+        </LinearLayout>
+
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="409dp"
+        android:layout_height="264dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="#DFEDD6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logoCeliakia"
+            android:layout_width="135dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="imagenLogoCeliakia"
+            app:srcCompat="@drawable/celiakia3" />
+
+        <TextView
+            android:id="@+id/tituloLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="115dp"
+            android:fontFamily="@font/asap_bold"
+            android:text="CeliaKIA"
+            android:textColor="#000000"
+            android:textSize="70sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtituloLogin"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="210dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="¿Ya estás listo para cocinar?"
+            android:textColor="#35424A"
+            android:textSize="18sp" />
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
