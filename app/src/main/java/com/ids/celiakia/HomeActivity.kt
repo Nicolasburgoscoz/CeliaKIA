@@ -17,6 +17,10 @@ import androidx.appcompat.widget.Toolbar
 import com.facebook.login.LoginManager
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.android.synthetic.main.content_main.emailTextView
+import kotlinx.android.synthetic.main.content_main.logOutButton
+import kotlinx.android.synthetic.main.content_main.providerTextView
+import kotlinx.android.synthetic.main.nav_header_main.logOutButton2
 import java.security.Provider
 
 enum class ProviderType {

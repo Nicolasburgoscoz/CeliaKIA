@@ -56,7 +56,7 @@ class AuthActivity : AppCompatActivity() {
     private fun setup() {
         title = "Autenticación"
 
-        logOutButton.setOnClickListener {
+/*                logOutButton.setOnClickListener {
                 if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty())
 
                     FirebaseAuth.getInstance().createUserWithEmailAndPassword(emailEditText.text.toString(), passwordEditText.text.toString()).addOnCompleteListener {
@@ -67,8 +67,8 @@ class AuthActivity : AppCompatActivity() {
                         }
                     }
         }
-
-        loginButton.setOnClickListener {
+*/
+/*        loginButton.setOnClickListener {
             if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty())
 
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(emailEditText.text.toString(), passwordEditText.text.toString()).addOnCompleteListener {
@@ -79,7 +79,7 @@ class AuthActivity : AppCompatActivity() {
                     }
                 }
         }
-
+*/
         googleButton.setOnClickListener {
 
             // Configuracion
