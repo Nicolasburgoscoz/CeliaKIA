@@ -8,13 +8,14 @@
 
     <LinearLayout
         android:id="@+id/authLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="385dp"
+        android:layout_height="41dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:orientation="vertical"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -25,7 +26,7 @@
         <TextView
             android:id="@+id/textoEmail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_weight="1"
             android:fontFamily="@font/asap_bold"
             android:paddingStart="5dp"
@@ -39,39 +40,45 @@
             android:layout_width="match_parent"
             android:layout_height="8dp" />
 
-        <LinearLayout
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="196dp"
+        android:layout_height="104dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authLayout">
+
+        <Button
+            android:id="@+id/googleButton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:backgroundTint="#FF3823"
+            android:drawableStart="@drawable/common_google_signin_btn_icon_dark"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Google"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
 
-            <Button
-                android:id="@+id/googleButton"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@android:color/white"
-                android:backgroundTint="#FF3823"
-                android:drawableStart="@drawable/common_google_signin_btn_icon_dark"
-                android:paddingStart="16dp"
-                android:text="Google"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
 
-            <Button
-                android:id="@+id/facebookButton"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@android:color/white"
-                android:backgroundTint="#3B5998"
-                android:drawableStart="@drawable/icono_facebook"
-                android:paddingStart="16dp"
-                android:text="Facebook"
-                android:textAlignment="textStart"
-                android:textColor="#FFFFFF" />
-        </LinearLayout>
-
+        <Button
+            android:id="@+id/facebookButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:backgroundTint="#3B5998"
+            android:drawableStart="@drawable/icono_facebook"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Facebook"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 
     <FrameLayout
