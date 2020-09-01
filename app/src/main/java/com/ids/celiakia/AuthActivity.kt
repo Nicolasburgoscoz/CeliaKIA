@@ -54,9 +54,9 @@ class AuthActivity : AppCompatActivity() {
     }
 
     private fun setup() {
-        title = "Autenticación"
+/*          title = "Autenticación"
 
-/*                logOutButton.setOnClickListener {
+              logOutButton.setOnClickListener {
                 if (emailEditText.text.isNotEmpty() && passwordEditText.text.isNotEmpty())
 
                     FirebaseAuth.getInstance().createUserWithEmailAndPassword(emailEditText.text.toString(), passwordEditText.text.toString()).addOnCompleteListener {

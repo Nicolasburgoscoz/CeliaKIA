@@ -16,12 +16,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.facebook.login.LoginManager
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_main.emailTextView
 import kotlinx.android.synthetic.main.content_main.logOutButton
 import kotlinx.android.synthetic.main.content_main.providerTextView
-import kotlinx.android.synthetic.main.nav_header_main.logOutButton2
-import java.security.Provider
 
 enum class ProviderType {
     BASIC,
@@ -51,7 +48,7 @@ class HomeActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
+                R.id.nav_yahoraquecomo, R.id.nav_elmundodelaceliaquia, R.id.nav_favoritos
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -74,7 +71,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun setup(email: String, provider: String) {
 
-        title = "Inicio"
+//        title = "Inicio"
         emailTextView.text = email
         providerTextView.text = provider
 

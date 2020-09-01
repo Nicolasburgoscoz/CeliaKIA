@@ -1,4 +1,4 @@
-package com.ids.celiakia.ui.gallery
+package com.ids.celiakia.ui.yahoraquecomo
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.ids.celiakia.R
 
-class GalleryFragment : Fragment() {
+class YAhoraQueComoFragment : Fragment() {
 
-    private lateinit var galleryViewModel: GalleryViewModel
+    private lateinit var yahoraquecomoViewModel: YAhoraQueComoViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        galleryViewModel =
-            ViewModelProviders.of(this).get(GalleryViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
-        val textView: TextView = root.findViewById(R.id.text_gallery)
-        galleryViewModel.text.observe(viewLifecycleOwner, Observer {
+        yahoraquecomoViewModel =
+            ViewModelProviders.of(this).get(YAhoraQueComoViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_yahoraquecomo, container, false)
+        val textView: TextView = root.findViewById(R.id.text_yahoraquecomo)
+        yahoraquecomoViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

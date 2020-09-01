@@ -3,23 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_yahoraquecomo">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.ids.celiakia.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_kia"
+        android:name="com.ids.celiakia.ui.favoritos.FavoritosFragment"
+        android:label="@string/menu_kia"
+        tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/nav_yahoraquecomo"
+        android:name="com.ids.celiakia.ui.yahoraquecomo.YAhoraQueComoFragment"
+        android:label="@string/menu_yahoraquecomo"
+        tools:layout="@layout/fragment_yahoraquecomo" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.ids.celiakia.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_elmundodelaceliaquia"
+        android:name="com.ids.celiakia.ui.elmundodelaceliaquia.ElMundoDeLaCeliaquiaFragment"
+        android:label="@string/menu_elmundodelaceliaquia"
+        tools:layout="@layout/fragment_elmundodelaceliaquia" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.ids.celiakia.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_favoritos"
+        android:name="com.ids.celiakia.ui.favoritos.FavoritosFragment"
+        android:label="@string/menu_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
 </navigation>

@@ -5,16 +5,20 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_yahoraquecomo"
+            android:icon="?android:attr/actionModeFindDrawable"
+            android:title="@string/menu_yahoraquecomo" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_elmundodelaceliaquia"
+            android:icon="@android:drawable/ic_menu_mapmode"
+            android:title="@string/menu_elmundodelaceliaquia" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_favoritos"
+            android:icon="@drawable/favoritos"
+            android:title="@string/menu_favoritos" />
+        <item
+            android:id="@+id/nav_kia"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="@string/menu_kia" />
     </group>
 </menu>

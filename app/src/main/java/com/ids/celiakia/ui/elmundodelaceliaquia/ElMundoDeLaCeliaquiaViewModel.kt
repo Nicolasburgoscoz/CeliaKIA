@@ -1,13 +1,13 @@
-package com.ids.celiakia.ui.gallery
+package com.ids.celiakia.ui.elmundodelaceliaquia
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class GalleryViewModel : ViewModel() {
+class ElMundoDeLaCeliaquiaViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is gallery Fragment"
+        value = " "
     }
     val text: LiveData<String> = _text
 }
