@@ -6,11 +6,6 @@
     app:startDestination="@+id/nav_yahoraquecomo">
 
     <fragment
-        android:id="@+id/nav_kia"
-        android:name="com.ids.celiakia.ui.favoritos.FavoritosFragment"
-        android:label="@string/menu_kia"
-        tools:layout="@layout/fragment_favoritos" />
-    <fragment
         android:id="@+id/nav_yahoraquecomo"
         android:name="com.ids.celiakia.ui.yahoraquecomo.YAhoraQueComoFragment"
         android:label="@string/menu_yahoraquecomo"
@@ -27,4 +22,9 @@
         android:name="com.ids.celiakia.ui.favoritos.FavoritosFragment"
         android:label="@string/menu_favoritos"
         tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/kiaFragment"
+        android:name="com.ids.celiakia.KiaFragment"
+        android:label="fragment_kia"
+        tools:layout="@layout/fragment_kia" />
 </navigation>
