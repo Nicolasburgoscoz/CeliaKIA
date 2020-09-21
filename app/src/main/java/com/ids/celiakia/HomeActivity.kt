@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.facebook.login.LoginManager
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.content_main.emailTextView
 import kotlinx.android.synthetic.main.content_main.logOutButton
 import kotlinx.android.synthetic.main.content_main.providerTextView
@@ -78,6 +79,22 @@ class HomeActivity : AppCompatActivity() {
         logOutButton.setOnClickListener {
 
            // Borrado de datos
+
+            val prefs = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
+            prefs.clear()
+            prefs.apply()
+
+            if (provider == ProviderType.FACEBOOK.name) {
+                LoginManager.getInstance().logOut()
+            }
+
+            FirebaseAuth.getInstance().signOut()
+            onBackPressed()
+        }
+
+        button2.setOnClickListener {
+
+            // Borrado de datos
 
             val prefs = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
             prefs.clear()

@@ -25,6 +25,6 @@
     <fragment
         android:id="@+id/kiaFragment"
         android:name="com.ids.celiakia.KiaFragment"
-        android:label="fragment_kia"
+        android:label="@string/menu_kia"
         tools:layout="@layout/fragment_kia" />
 </navigation>
