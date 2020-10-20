@@ -9,9 +9,9 @@
     <LinearLayout
         android:id="@+id/authLayout"
         android:layout_width="385dp"
-        android:layout_height="41dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:orientation="vertical"
@@ -26,15 +26,15 @@
         <TextView
             android:id="@+id/textoEmail"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:fontFamily="@font/asap_bold"
+            android:fontFamily="@font/caveat_brush"
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
-            android:text="Ingresa"
+            android:text="@string/ingresa"
             android:textAlignment="center"
             android:textColor="#72BB53"
-            android:textSize="24sp" />
+            android:textSize="36sp" />
 
         <Space
             android:layout_width="match_parent"
@@ -43,8 +43,9 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="196dp"
-        android:layout_height="104dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="310dp"
+        android:layout_height="110dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,14 +55,17 @@
             android:id="@+id/googleButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:backgroundTint="#FF3823"
-            android:drawableStart="@drawable/common_google_signin_btn_icon_dark"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
+            android:background="@drawable/button"
+            android:backgroundTint="#F44336"
+            android:drawableStart="@drawable/googleg_standard_color_18"
+            android:fontFamily="@font/caveat_brush"
+            android:paddingStart="100dp"
+            android:paddingEnd="100dp"
             android:text="Google"
             android:textAlignment="center"
-            android:textColor="#FFFFFF" />
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
 
         <Space
             android:layout_width="match_parent"
@@ -69,61 +73,78 @@
 
         <Button
             android:id="@+id/facebookButton"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
+            android:background="@drawable/button"
             android:backgroundTint="#3B5998"
             android:drawableStart="@drawable/icono_facebook"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
+            android:fontFamily="@font/caveat_brush"
+            android:paddingStart="90dp"
+            android:paddingEnd="100dp"
             android:text="Facebook"
             android:textAlignment="center"
-            android:textColor="#FFFFFF" />
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textDirection="locale"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="409dp"
-        android:layout_height="264dp"
+        android:layout_width="421dp"
+        android:layout_height="297dp"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="2dp"
         android:layout_marginEnd="2dp"
-        android:background="#DFEDD6"
+        android:background="@drawable/backgr_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/logoCeliakia"
-            android:layout_width="135dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="140dp"
-            android:layout_marginTop="20dp"
-            android:contentDescription="imagenLogoCeliakia"
-            app:srcCompat="@drawable/celiakia3" />
-
         <TextView
             android:id="@+id/tituloLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="115dp"
-            android:fontFamily="@font/asap_bold"
-            android:text="CeliaKIA"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="145dp"
+            android:fontFamily="@font/caveat_brush"
+            android:text="@string/celiakia"
+            android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="70sp"
+            android:textSize="85sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/subtituloLogin"
-            android:layout_width="280dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:layout_marginStart="95dp"
-            android:layout_marginTop="210dp"
-            android:fontFamily="@font/quicksand_bold"
-            android:text="¿Ya estás listo para cocinar?"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="245dp"
+            android:fontFamily="@font/asap_medium"
+            android:text="@string/ya_est_s_listo_para_cocinar"
+            android:textAlignment="center"
             android:textColor="#35424A"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="395dp"
+            android:layout_height="177dp"
+            app:srcCompat="@drawable/kia" />
     </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="425dp"
+        android:layout_height="265dp"
+        android:layout_marginTop="16dp"
+        android:fadeScrollbars="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.421"
+        app:srcCompat="@drawable/hojaskia" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
