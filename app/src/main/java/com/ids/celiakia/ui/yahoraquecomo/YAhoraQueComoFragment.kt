@@ -22,7 +22,7 @@ class YAhoraQueComoFragment : Fragment() {
         yahoraquecomoViewModel =
             ViewModelProviders.of(this).get(YAhoraQueComoViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_yahoraquecomo, container, false)
-        val textView: TextView = root.findViewById(R.id.text_yahoraquecomo)
+        val textView: TextView = root.findViewById(R.id.y_ahora_que_como)
         yahoraquecomoViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })

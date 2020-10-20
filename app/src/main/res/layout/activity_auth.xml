@@ -8,11 +8,9 @@
 
     <LinearLayout
         android:id="@+id/authLayout"
-        android:layout_width="385dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="409dp"
+        android:layout_height="58dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:orientation="vertical"
         android:textAlignment="center"
@@ -92,8 +90,8 @@
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="421dp"
-        android:layout_height="297dp"
+        android:layout_width="410dp"
+        android:layout_height="333dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         android:background="@drawable/backgr_login"
@@ -106,7 +104,7 @@
             android:layout_width="match_parent"
             android:layout_height="93dp"
             android:layout_marginStart="0dp"
-            android:layout_marginTop="145dp"
+            android:layout_marginTop="185dp"
             android:fontFamily="@font/caveat_brush"
             android:text="@string/celiakia"
             android:textAlignment="center"
@@ -119,7 +117,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginStart="0dp"
-            android:layout_marginTop="245dp"
+            android:layout_marginTop="285dp"
             android:fontFamily="@font/asap_medium"
             android:text="@string/ya_est_s_listo_para_cocinar"
             android:textAlignment="center"
@@ -130,13 +128,14 @@
             android:id="@+id/imageView5"
             android:layout_width="395dp"
             android:layout_height="177dp"
+            android:layout_marginTop="40dp"
             app:srcCompat="@drawable/kia" />
     </FrameLayout>
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="425dp"
-        android:layout_height="265dp"
+        android:layout_width="449dp"
+        android:layout_height="369dp"
         android:layout_marginTop="16dp"
         android:fadeScrollbars="false"
         android:visibility="visible"
