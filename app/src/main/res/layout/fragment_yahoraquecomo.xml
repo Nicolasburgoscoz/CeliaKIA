@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.yahoraquecomo.YAhoraQueComoFragment"
-    android:id="@+id/y_ahora_que_como">
+    tools:context=".ui.yahoraquecomo.YAhoraQueComoFragment">
 
         <SearchView
             android:id="@+id/searchView"
@@ -19,11 +18,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/yaqc"
+            app:layout_constraintTop_toBottomOf="@+id/y_ahora_que_como"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/yaqc"
+            android:id="@+id/y_ahora_que_como"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
