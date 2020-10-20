@@ -7,59 +7,13 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/emailTextView"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/email" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="8dp" />
-
-        <TextView
-            android:id="@+id/providerTextView"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/proveedor" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="8dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/logOutButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/colorAccent"
-                android:text="Cerrar Sesión"
-                android:textColor="@android:color/white" />
-        </LinearLayout>
-    </LinearLayout>
-
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
