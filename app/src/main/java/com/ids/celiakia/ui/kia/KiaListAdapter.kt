@@ -1,4 +1,4 @@
-package com.ids.celiakia.ui.elmundodelaceliaquia
+package com.ids.celiakia.ui.kia
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,8 +10,8 @@ import android.widget.TextView
 import com.ids.celiakia.R
 import com.ids.celiakia.Titulos
 
-class TitulosAdapter(private val context: Context,
-                     private val dataSource: ArrayList<Titulos>) : BaseAdapter() {
+class KiaListAdapter(private val context: Context,
+                     private val dataSource: Array<String>) : BaseAdapter() {
 
     private val inflater: LayoutInflater
             = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
@@ -35,16 +35,16 @@ class TitulosAdapter(private val context: Context,
     @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         // Get view for row item
-        val rowView = inflater.inflate(R.layout.list_item_titulos, parent, false)
+        val rowView = inflater.inflate(R.layout.kia_item_titulos, parent, false)
 
         // Get title element
-        val titleTextView = rowView.findViewById(R.id.titulos_list_title) as TextView
+        val titleTextView = rowView.findViewById(R.id.kia_list_title) as TextView
 
         // 1
-        val titulos = getItem(position) as Titulos
+        val valores = getItem(position)
 
 // 2
-        titleTextView.text = titulos.title
+        titleTextView.text = valores as CharSequence?
         return rowView
     }
 
