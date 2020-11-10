@@ -4,28 +4,32 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.ListView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import com.ids.celiakia.R
+import com.ids.celiakia.ui.elmundodelaceliaquia.TitulosAdapter
+
 
 class YAhoraQueComoFragment : Fragment() {
 
-    private lateinit var yahoraquecomoViewModel: YAhoraQueComoViewModel
+//    private lateinit var yAhoraQueComoModel: YAhoraQueComoViewModel
+    private lateinit var recipelistView : ListView
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        yahoraquecomoViewModel =
-            ViewModelProviders.of(this).get(YAhoraQueComoViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_yahoraquecomo, container, false)
-        val textView: TextView = root.findViewById(R.id.text_y_ahora_que_como)
-        yahoraquecomoViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
-        return root
+
+        val v: View = inflater.inflate(R.layout.fragment_yahoraquecomo, container, false)
+        val listView: ListView = v.findViewById(R.id.recipe_list_view)
+
+// 1
+        val recipeList = Recipe.getRecipesFromFile("recipes.json", v.context)
+
+        val adapter = RecipeAdapter(v.context, recipeList)
+        listView.adapter = adapter
+
+        return v
     }
 }

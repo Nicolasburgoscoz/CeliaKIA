@@ -9,9 +9,11 @@ import android.widget.BaseAdapter
 import android.widget.TextView
 import com.ids.celiakia.R
 import com.ids.celiakia.Titulos
+import com.ids.celiakia.ui.yahoraquecomo.Recipe
 
 class TitulosAdapter(private val context: Context,
-                     private val dataSource: ArrayList<Titulos>) : BaseAdapter() {
+                     private val dataSource: ArrayList<Titulos>
+) : BaseAdapter() {
 
     private val inflater: LayoutInflater
             = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
