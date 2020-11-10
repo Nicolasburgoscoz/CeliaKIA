@@ -27,7 +27,6 @@ class KiaFragment : Fragment() {
         val kialistView: ListView = v.findViewById(R.id.kia_list_view)
 
         val valores = arrayOf(
-            "KIA",
             "Historia de KIA",
             "Sobre nosotros",
             "Explicación de la función de KIA en la App"
