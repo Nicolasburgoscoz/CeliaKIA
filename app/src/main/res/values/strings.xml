@@ -19,8 +19,6 @@
     <string name="proveedor" translatable="false">Proveedor</string>
     <string name="email" translatable="false">Email</string>
     <string name="cerrar_sesion" translatable="false">Cerrar sesión</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="ingresa" translatable="false">Ingresa</string>
     <string name="google" translatable="false">Google</string>
     <string name="facebook" translatable="false">Facebook</string>
@@ -28,5 +26,22 @@
     <string name="celiakia" translatable="false">CeliaKIA</string>
     <string name="ya_est_s_listo_para_cocinar" translatable="false">¿Ya estás listo para cocinar?</string>
 
-
+    <string name="QueEsLaCeliaquia" translatable="false">
+        Pendiente explicación qué es la celiaquía</string>
+    <string name="Sintomas" translatable="false">
+        Pendiente ingresar Síntomas</string>
+    <string name="ComoSeDiagnostica" translatable="false">
+        Pendiente explicación diagnóstico</string>
+    <string name="ContaminacionCruzada" translatable="false">
+        Pendiente explicación Contaminación Cruzada</string>
+    <string name="ComoVivirSinGlutenEnElHogar" translatable="false">
+        Pendiente explicación cómo vivir sin gluten en el hogar</string>
+    <string name="ComoLlevarUnaDietaLibreDeGluten" translatable="false">
+        Pendiente explicación cómo llevar una dieta libre de gluten</string>
+    <string name="ComoOrdenarLaHeladera" translatable="false">
+        Pendiente explicación cómo ordenar la heladera</string>
+    <string name="ComerFueraDeCasa" translatable="false">
+        Pendiente explicación comer fuera de casa</string>
+    <string name="QueHacerSiTengoUnHijoCeliaco" translatable="false">
+        Pendiente explicación qué hacer si tengo un hijo celíaco</string>
 </resources>

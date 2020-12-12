@@ -15,7 +15,35 @@
         android:id="@+id/nav_elmundodelaceliaquia"
         android:name="com.ids.celiakia.ui.elmundodelaceliaquia.ElMundoDeLaCeliaquiaFragment"
         android:label="@string/menu_elmundodelaceliaquia"
-        tools:layout="@layout/fragment_elmundodelaceliaquia" />
+        tools:layout="@layout/fragment_elmundodelaceliaquia" >
+        <action
+            android:id="@+id/action_nav_elmundodelaceliaquia_to_sintomasFragment"
+            app:destination="@id/sintomasFragment" />
+        <action
+            android:id="@+id/action_nav_elmundodelaceliaquia_to_queEsLaCeliakiaFragment"
+            app:destination="@id/queEsLaCeliakiaFragment" />
+        <action
+            android:id="@+id/action_nav_elmundodelaceliaquia_to_comoSeDiagnosticaFragment"
+            app:destination="@id/comoSeDiagnosticaFragment" />
+        <action
+            android:id="@+id/action_nav_elmundodelaceliaquia_to_contaminacionCruzadaFragment"
+            app:destination="@id/contaminacionCruzadaFragment" />
+        <action
+            android:id="@+id/action_nav_elmundodelaceliaquia_to_comoVivirSinGlutenEnElHogarFragment"
+            app:destination="@id/comoVivirSinGlutenEnElHogarFragment" />
+        <action
+            android:id="@+id/action_nav_elmundodelaceliaquia_to_comoLlevarUnaDietaLibreDeGlutenFragment"
+            app:destination="@id/comoLlevarUnaDietaLibreDeGlutenFragment" />
+        <action
+            android:id="@+id/action_nav_elmundodelaceliaquia_to_comoOrdenarLaHeladeraFragment"
+            app:destination="@id/comoOrdenarLaHeladeraFragment" />
+        <action
+            android:id="@+id/action_nav_elmundodelaceliaquia_to_comerFueraDeCasaFragment"
+            app:destination="@id/comerFueraDeCasaFragment" />
+        <action
+            android:id="@+id/action_nav_elmundodelaceliaquia_to_queHacerSiTengoUnHijoCeliacoFragment"
+            app:destination="@id/queHacerSiTengoUnHijoCeliacoFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_favoritos"
@@ -27,4 +55,49 @@
         android:name="com.ids.celiakia.ui.kia.KiaFragment"
         android:label="@string/menu_kia"
         tools:layout="@layout/fragment_kia" />
+    <fragment
+        android:id="@+id/sintomasFragment"
+        android:name="com.ids.celiakia.ui.elmundodelaceliaquia.SintomasFragment"
+        android:label="fragment_sintomas"
+        tools:layout="@layout/fragment_sintomas" />
+    <fragment
+        android:id="@+id/queEsLaCeliakiaFragment"
+        android:name="com.ids.celiakia.ui.elmundodelaceliaquia.QueEsLaCeliakiaFragment"
+        android:label="fragment_que_es_la_celiakia"
+        tools:layout="@layout/fragment_que_es_la_celiakia" />
+    <fragment
+        android:id="@+id/comoSeDiagnosticaFragment"
+        android:name="com.ids.celiakia.ui.elmundodelaceliaquia.ComoSeDiagnosticaFragment"
+        android:label="fragment_como_se_diagnostica"
+        tools:layout="@layout/fragment_como_se_diagnostica" />
+    <fragment
+        android:id="@+id/contaminacionCruzadaFragment"
+        android:name="com.ids.celiakia.ui.elmundodelaceliaquia.ContaminacionCruzadaFragment"
+        android:label="fragment_contaminacion_cruzada"
+        tools:layout="@layout/fragment_contaminacion_cruzada" />
+    <fragment
+        android:id="@+id/comoVivirSinGlutenEnElHogarFragment"
+        android:name="com.ids.celiakia.ui.elmundodelaceliaquia.ComoVivirSinGlutenEnElHogarFragment"
+        android:label="fragment_como_vivir_sin_gluten_en_el_hogar"
+        tools:layout="@layout/fragment_como_vivir_sin_gluten_en_el_hogar" />
+    <fragment
+        android:id="@+id/comoLlevarUnaDietaLibreDeGlutenFragment"
+        android:name="com.ids.celiakia.ui.elmundodelaceliaquia.ComoLlevarUnaDietaLibreDeGlutenFragment"
+        android:label="fragment_como_llevar_una_dieta_libre_de_gluten"
+        tools:layout="@layout/fragment_como_llevar_una_dieta_libre_de_gluten" />
+    <fragment
+        android:id="@+id/comoOrdenarLaHeladeraFragment"
+        android:name="com.ids.celiakia.ui.elmundodelaceliaquia.ComoOrdenarLaHeladeraFragment"
+        android:label="fragment_como_ordenar_la_heladera"
+        tools:layout="@layout/fragment_como_ordenar_la_heladera" />
+    <fragment
+        android:id="@+id/comerFueraDeCasaFragment"
+        android:name="com.ids.celiakia.ui.elmundodelaceliaquia.ComerFueraDeCasaFragment"
+        android:label="fragment_comer_fuera_de_casa"
+        tools:layout="@layout/fragment_comer_fuera_de_casa" />
+    <fragment
+        android:id="@+id/queHacerSiTengoUnHijoCeliacoFragment"
+        android:name="com.ids.celiakia.ui.elmundodelaceliaquia.QueHacerSiTengoUnHijoCeliacoFragment"
+        android:label="fragment_que_hacer_si_tengo_un_hijo_celiaco"
+        tools:layout="@layout/fragment_que_hacer_si_tengo_un_hijo_celiaco" />
 </navigation>
