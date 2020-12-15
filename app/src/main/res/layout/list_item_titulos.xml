@@ -16,7 +16,7 @@
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
         android:textAlignment="center"
-        android:textColor="#ABB5BE"
+        android:textColor="#737373"
         android:textSize="20sp"
         android:textStyle="normal"
         tools:text="Título" />
