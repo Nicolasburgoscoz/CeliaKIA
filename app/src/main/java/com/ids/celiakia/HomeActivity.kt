@@ -3,18 +3,18 @@ package com.ids.celiakia
 import android.content.Context
 import android.os.Bundle
 import android.view.Menu
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.navigation.NavigationView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import com.facebook.login.LoginManager
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.navigation.NavigationView
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_home.*
 
@@ -46,7 +46,19 @@ class HomeActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_yahoraquecomo, R.id.nav_elmundodelaceliaquia, R.id.nav_favoritos, R.id.kiaFragment
+                R.id.nav_yahoraquecomo,
+                R.id.nav_elmundodelaceliaquia,
+                R.id.nav_favoritos,
+                R.id.kiaFragment,
+                R.id.queEsLaCeliakiaFragment,
+                R.id.sintomasFragment,
+                R.id.comoSeDiagnosticaFragment,
+                R.id.contaminacionCruzadaFragment,
+                R.id.comoVivirSinGlutenEnElHogarFragment,
+                R.id.comoLlevarUnaDietaLibreDeGlutenFragment,
+                R.id.comoOrdenarLaHeladeraFragment,
+                R.id.comerFueraDeCasaFragment,
+                R.id.queHacerSiTengoUnHijoCeliacoFragment
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -57,13 +69,13 @@ class HomeActivity : AppCompatActivity() {
         val bundle = intent.extras
         val email = bundle?.getString("email")
         val provider =bundle?.getString("provider")
-        setup(email ?:"", provider ?: "")
+        setup(email ?: "", provider ?: "")
 
         // Guardado de datos
 
         val prefs = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
-        prefs.putString("email",email)
-        prefs.putString("provider",provider)
+        prefs.putString("email", email)
+        prefs.putString("provider", provider)
         prefs.apply()
     }
 
@@ -97,5 +109,10 @@ class HomeActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    //función para cambiar título de la barra de acción
+    fun setActionBarTitle(title: String?) {
+        supportActionBar!!.title = title
     }
 }

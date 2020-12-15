@@ -17,7 +17,7 @@ class Titulos(
 
             try {
                 // Load data
-                val jsonString = loadJsonFromAsset("elmundotitulos.json", context)
+                val jsonString = loadJsonFromAsset("elmundotitulos", context)
                 val json = JSONObject(jsonString)
                 val titulos = json.getJSONArray("titulos")
 
