@@ -54,7 +54,17 @@
         android:id="@+id/kiaFragment"
         android:name="com.ids.celiakia.ui.kia.KiaFragment"
         android:label="@string/menu_kia"
-        tools:layout="@layout/fragment_kia" />
+        tools:layout="@layout/fragment_kia" >
+        <action
+            android:id="@+id/action_kiaFragment_to_historiaDeKIAFragment"
+            app:destination="@id/historiaDeKIAFragment" />
+        <action
+            android:id="@+id/action_kiaFragment_to_sobreNosotrosFragment"
+            app:destination="@id/sobreNosotrosFragment" />
+        <action
+            android:id="@+id/action_kiaFragment_to_explicacionDeFuncionKIAFragment"
+            app:destination="@id/explicacionDeFuncionKIAFragment" />
+    </fragment>
     <fragment
         android:id="@+id/sintomasFragment"
         android:name="com.ids.celiakia.ui.elmundodelaceliaquia.SintomasFragment"
@@ -100,4 +110,19 @@
         android:name="com.ids.celiakia.ui.elmundodelaceliaquia.QueHacerSiTengoUnHijoCeliacoFragment"
         android:label="@string/menu_quehacerhijoceliaco"
         tools:layout="@layout/fragment_que_hacer_si_tengo_un_hijo_celiaco" />
+    <fragment
+        android:id="@+id/historiaDeKIAFragment"
+        android:name="com.ids.celiakia.ui.kia.HistoriaDeKIAFragment"
+        android:label="@string/menu_historiadekia"
+        tools:layout="@layout/fragment_historia_de_k_i_a" />
+    <fragment
+        android:id="@+id/sobreNosotrosFragment"
+        android:name="com.ids.celiakia.ui.kia.SobreNosotrosFragment"
+        android:label="@string/menu_sobrenosotros"
+        tools:layout="@layout/fragment_sobre_nosotros" />
+    <fragment
+        android:id="@+id/explicacionDeFuncionKIAFragment"
+        android:name="com.ids.celiakia.ui.kia.ExplicacionDeFuncionKIAFragment"
+        android:label="@string/menu_explicacionfunciondekia"
+        tools:layout="@layout/fragment_explicacion_de_funcion_k_i_a" />
 </navigation>

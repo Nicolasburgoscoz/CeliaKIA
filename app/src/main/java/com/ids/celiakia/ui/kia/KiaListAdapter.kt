@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
+import androidx.navigation.findNavController
 import com.ids.celiakia.R
 import com.ids.celiakia.Titulos
 
@@ -45,6 +46,18 @@ class KiaListAdapter(private val context: Context,
 
 // 2
         titleTextView.text = valores as CharSequence?
+
+        rowView.setOnClickListener { rowView -> position
+            if (position==0){
+                rowView.findNavController().navigate(R.id.historiaDeKIAFragment)
+            }
+            if (position==1){
+                rowView.findNavController().navigate(R.id.sobreNosotrosFragment)
+            }
+            if (position==2){
+                rowView.findNavController().navigate(R.id.explicacionDeFuncionKIAFragment)
+            }
+        }
         return rowView
     }
 

@@ -21,6 +21,9 @@
     <string name="menu_comoordenarlaheladera" translatable="false">¿Cómo ordenar la heladera?</string>
     <string name="menu_comerfuera" translatable="false">Comer fuera de casa</string>
     <string name="menu_quehacerhijoceliaco" translatable="false">¿Qué hacer si tengo un hijo celíaco?</string>
+    <string name="menu_historiadekia" translatable="false">Historia de KIA</string>
+    <string name="menu_sobrenosotros" translatable="false">Sobre nosotros</string>
+    <string name="menu_explicacionfunciondekia" translatable="false">Explicación de la función de KIA</string>
 
     <string name="prefs_file" translatable="false">com.ids.celiakia.PREFERENCE_FILE_KEY</string>
     <string name="facebook_app_id" translatable="false">2722938047952714</string>
@@ -53,4 +56,10 @@
         Pendiente explicación comer fuera de casa</string>
     <string name="QueHacerSiTengoUnHijoCeliaco" translatable="false">
         Pendiente explicación qué hacer si tengo un hijo celíaco</string>
+    <string name="HistoriaDeKIA" translatable="false">
+        Pendiente historia de KIA</string>
+    <string name="SobreNosotros" translatable="false">
+        Pendiente sobre nosotros</string>
+    <string name="ExplicacionDeFuncionKIA" translatable="false">
+        Pendiente explicación de la función de KIA</string>
 </resources>

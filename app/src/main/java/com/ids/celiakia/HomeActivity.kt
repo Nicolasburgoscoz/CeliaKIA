@@ -58,7 +58,10 @@ class HomeActivity : AppCompatActivity() {
                 R.id.comoLlevarUnaDietaLibreDeGlutenFragment,
                 R.id.comoOrdenarLaHeladeraFragment,
                 R.id.comerFueraDeCasaFragment,
-                R.id.queHacerSiTengoUnHijoCeliacoFragment
+                R.id.queHacerSiTengoUnHijoCeliacoFragment,
+                R.id.historiaDeKIAFragment,
+                R.id.sobreNosotrosFragment,
+                R.id.explicacionDeFuncionKIAFragment
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
